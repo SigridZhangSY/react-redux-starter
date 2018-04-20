@@ -1,7 +1,7 @@
 module.exports = {
-  entry: [
-    './src/index.js'
-  ],
+  entry: {
+    js: ['babel-polyfill', './src/index.js']
+  },
   output: {
     path: __dirname,
     publicPath: '/',
@@ -13,7 +13,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel',
         query: {
-         presets: ['react', 'es2015', 'stage-1']
+          presets: ['react', 'es2015', 'stage-1']
         }
       },
       {
