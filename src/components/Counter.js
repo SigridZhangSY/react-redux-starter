@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { increase, decrease } from '../actions/counterAction'
+import { increase, decrease } from '../redux/actions/counterAction'
 
 const mapStateToProps = (state) => ({
   counterValue: state.counter.counterValue
